@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 
-class logistics
+class Logistics
 {
 public:
     virtual void howWillSend(std::string _pacote) = 0;

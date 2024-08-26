@@ -2,18 +2,18 @@
 
 #include <iostream>
 
-aereo *aereo::instance = nullptr;
+Aereo *Aereo::instance = nullptr;
 using namespace std;
-aereo::aereo(){
-    cout << "chamei a classe aereo" << endl;
+Aereo::Aereo(){
+    cout << "chamei a classe Aereo" << endl;
 }
 
-void aereo::howWillSend(string _pacote){
+void Aereo::howWillSend(string _pacote){
     cout << "Enviando: " << _pacote << "..."<<endl; 
 }
-aereo &aereo::getInstance(){
+Aereo &Aereo::getInstance(){
     if(instance == nullptr){
-        instance = new aereo();
+        instance = new Aereo();
     }
     return (*instance);
 }

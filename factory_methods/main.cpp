@@ -4,13 +4,15 @@
 
 using namespace std;
 int main(){
-    logistics &instanceAereo     = factory::getInstance(factory::object::AEREO);
-    logistics &instanceMaritmo   = factory::getInstance(factory::object::MARITIMO);
-    logistics &instanceTerrestre = factory::getInstance(factory::object::TERRESTRE);
-    logistics &instanceSubterreo = factory::getInstance(factory::object::SUBTERREO);
+    Logistics &instanceAereo          = Factory::getInstance(Factory::object::AEREO);
+    Logistics &instanceMaritmo        = Factory::getInstance(Factory::object::MARITIMO);
+    Logistics &instanceTerrestre      = Factory::getInstance(Factory::object::TERRESTRE);
+    Logistics &instanceSubterreo      = Factory::getInstance(Factory::object::SUBTERREO);
 
-    logistics &instanceAereo2     = factory::getInstance(factory::object::AEREO);
-    logistics &instanceMaritmo2   = factory::getInstance(factory::object::MARITIMO);
-    logistics &instanceTerrestre2 = factory::getInstance(factory::object::TERRESTRE);
-    logistics &instanceSubterreo2 = factory::getInstance(factory::object::SUBTERREO);
+    Logistics &instanceAereo2         = Factory::getInstance(Factory::object::AEREO);
+    Logistics &instanceMaritmo2       = Factory::getInstance(Factory::object::MARITIMO);
+    Logistics &instanceTerrestre2     = Factory::getInstance(Factory::object::TERRESTRE);
+    Logistics &instanceSubterreo2     = Factory::getInstance(Factory::object::SUBTERREO);
+    Logistics &instanceTeleTransporte = Factory::getInstance(Factory::object
+    ::TELETRANSPORTE);
 }

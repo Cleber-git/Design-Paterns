@@ -1,15 +1,15 @@
 #pragma once
 #include "logistics.hpp"
 
-class aereo:public logistics
+class Aereo:public Logistics
 {
 private:
-    aereo(/* args */);
-    static aereo *instance;
-    aereo(const aereo&) = delete;
+    Aereo(/* args */);
+    static Aereo *instance;
+    Aereo(const Aereo&) = delete;
 public:
-    ~aereo();
+    ~Aereo();
     void howWillSend(std::string _pacote) override;
-    static aereo &getInstance();
+    static Aereo &getInstance();
 };
 

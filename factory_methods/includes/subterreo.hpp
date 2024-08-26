@@ -1,12 +1,12 @@
 #include "logistics.hpp"
 
-class subterreo : public logistics
+class Subterreo : public Logistics
 {
 private:
     
 public:
-    subterreo();
-    ~subterreo();
+    Subterreo();
+    ~Subterreo();
     void howWillSend(std::string _pacote)override;
     
 };

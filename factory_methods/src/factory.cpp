@@ -4,25 +4,34 @@
 #include "../includes/maritimo.hpp"
 #include "../includes/terrestre.hpp"
 #include "../includes/subterreo.hpp"
+#include "../includes/teletransporte.hpp"
 
 #include <iostream>
 
 using namespace std;
 
-logistics *factory::instance = nullptr;
-factory::factory(){}
+Logistics *Factory::instance = nullptr;
+Factory::Factory(){}
 
-logistics &factory::getInstance(object TIPO){
+Logistics &Factory::getInstance(object TIPO){
     switch (TIPO)
     {
     case object::MARITIMO:
-        return maritimo::getInstance();
+        return Maritimo::getInstance();
+        break;
     case object::AEREO:
-        return aereo::getInstance();
+        return Aereo::getInstance();
+        break;
     case object::TERRESTRE:
-        return terrestre::getInstance();
+        return Terrestre::getInstance();
+        break;
     case object::SUBTERREO:
-        subterreo *sub = new subterreo;
-        return  (*sub);
+        Subterreo *sub = new Subterreo();
+        return (*sub);
+        break;
+    case object::TELETRANSPORTE:
+        TeleTransporte* teleTransporte = new TeleTransporte;
+        return (*teleTransporte);
+        break;
     }
 }

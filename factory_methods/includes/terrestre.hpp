@@ -1,16 +1,16 @@
 #pragma once
 #include "logistics.hpp"
 
-class terrestre : public logistics
+class Terrestre : public Logistics
 {
 private:
-    terrestre(/* args */);
-    static terrestre *instance;
-    terrestre(const terrestre&) = delete;
+    Terrestre(/* args */);
+    static Terrestre *instance;
+    Terrestre(const Terrestre&) = delete;
 public:
-    ~terrestre();
+    ~Terrestre();
     void howWillSend(std::string _pacote) override;
-    static terrestre &getInstance();
+    static Terrestre &getInstance();
 
 };
 

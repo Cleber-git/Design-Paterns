@@ -1,20 +1,21 @@
 #include "logistics.hpp"
 
-class factory
+class Factory
 {
 private:
 
-    factory(/* args */);
-    static logistics *instance;
+    Factory(/* args */);
+    static Logistics *instance;
 public:
     enum class object {
         MARITIMO,
         AEREO,
         TERRESTRE,
-        SUBTERREO
+        SUBTERREO,
+        TELETRANSPORTE
     };  
-    ~factory();
-    static logistics &getInstance(object TIPO);
+    ~Factory();
+    static Logistics &getInstance(object TIPO);
 };
 
 

@@ -3,10 +3,10 @@
 #include <iostream> 
 
 using namespace std;
-subterreo::subterreo(){
-    cout << "Chamei o subterreo" << endl;
+Subterreo::Subterreo(){
+    cout << "Chamei o Subterreo" << endl;
 }
 
-void subterreo::howWillSend(string _produto){
+void Subterreo::howWillSend(string _produto){
     cout << "Enviando: " << _produto << "..." << endl;
 }
