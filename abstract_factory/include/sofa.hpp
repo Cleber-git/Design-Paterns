@@ -9,5 +9,4 @@ private:
     /* data */
 public:
     virtual void deitar()=0;
-    ~Sofa();
 };

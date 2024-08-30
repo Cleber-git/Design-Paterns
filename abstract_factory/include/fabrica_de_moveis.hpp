@@ -6,12 +6,10 @@
 
 #include <iostream>
 
-
 class FabricaDeMoveis
 {
 public:
-virtual  Cadeira*      criarCadeira();
-virtual  MesaDeCentro* criarMesa();
-virtual  Sofa*         criarSofa();
+virtual  Cadeira*      criarCadeira()=0;
+virtual  MesaDeCentro* criarMesa()   =0;
+virtual  Sofa*         criarSofa()   =0;
 };
-

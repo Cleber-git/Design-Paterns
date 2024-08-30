@@ -1,5 +1,7 @@
 #pragma once
 
+
+
 #include <iostream>
 #include <string>
 
@@ -9,5 +11,4 @@ private:
     /* data */
 public:
     virtual void colocarObjetos()=0; 
-    ~MesaDeCentro();
 };
