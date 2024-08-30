@@ -5,6 +5,7 @@ using namespace std;
 
 TeleTransporte::TeleTransporte(/* args */)
 {
+    cout << "Chamei o Teletransporte" << endl;
 }
 
 TeleTransporte::~TeleTransporte()

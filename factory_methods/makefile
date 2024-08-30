@@ -1,7 +1,7 @@
 CXX      = g++ 
 CXXFLAGS = -o
 
-SRC      = src/aereo.cpp src/factory.cpp src/maritmo.cpp src/terrestre.cpp
+SRC      = src/aereo.cpp src/factory.cpp src/maritmo.cpp src/terrestre.cpp src/teletransporte.cpp
 
 TARGET   = main
 

@@ -1,5 +1,4 @@
 #include "includes/factory.hpp"
-
 #include <iostream>
 
 using namespace std;
@@ -12,7 +11,7 @@ int main(){
     Logistics &instanceAereo2         = Factory::getInstance(Factory::object::AEREO);
     Logistics &instanceMaritmo2       = Factory::getInstance(Factory::object::MARITIMO);
     Logistics &instanceTerrestre2     = Factory::getInstance(Factory::object::TERRESTRE);
-    Logistics &instanceSubterreo2     = Factory::getInstance(Factory::object::SUBTERREO);
     Logistics &instanceTeleTransporte = Factory::getInstance(Factory::object
     ::TELETRANSPORTE);
+
 }

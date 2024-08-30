@@ -26,12 +26,11 @@ Logistics &Factory::getInstance(object TIPO){
         return Terrestre::getInstance();
         break;
     case object::SUBTERREO:
-        Subterreo *sub = new Subterreo();
-        return (*sub);
+        instance = new Subterreo();
         break;
     case object::TELETRANSPORTE:
-        TeleTransporte* teleTransporte = new TeleTransporte;
-        return (*teleTransporte);
+        instance = new TeleTransporte;
         break;
     }
+    return (*instance);
 }
